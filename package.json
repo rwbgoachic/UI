@@ -1,7 +1,7 @@
 {
-  "name": "react-supabase-app",
-  "private": true,
-  "version": "0.1.0",
+  "name": "@paysurity/ui",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -33,5 +33,25 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "design-system",
+    "paysurity"
+  ],
+  "author": "PaySurity",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paysurity/ui.git"
+  }
 }
