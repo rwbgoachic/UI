@@ -1,11 +1,23 @@
-# UI
+# PaySurity UI Component Library
 
-## Feel free to delete this file and replace it with your own content.
+A modern React component library with a focus on simplicity and usability.
 
-## Repository Initialization Notice
+## Components
 
-This repository was automatically initialized by the Bolt to GitHub extension.
+- Button: Versatile button component with primary and secondary variants
+- Input: Form input component with label and error state support
 
-**Auto-Generated Repository**
-- Created to ensure a valid Git repository structure
-- Serves as an initial commit point for your project
+## Usage
+
+```tsx
+import { Button, Input } from 'paysurity-ui'
+
+function App() {
+  return (
+    <div>
+      <Button variant="primary">Click me</Button>
+      <Input label="Username" error="This field is required" />
+    </div>
+  )
+}
+```
