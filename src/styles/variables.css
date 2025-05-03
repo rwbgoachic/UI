@@ -3,28 +3,60 @@
   --color-primary: #2563eb;
   --color-secondary: #e2e8f0;
   --color-error: #dc2626;
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
   --text-primary: #1a1a1a;
+  --text-secondary: #64748b;
   --background-color: #ffffff;
   --primary-color: #2563eb;
   --primary-hover-color: #1d4ed8;
   --surface-color: #ffffff;
   --border-color: #e2e8f0;
 
+  /* POS Specific Colors */
+  --pos-background: #f8fafc;
+  --pos-surface: #ffffff;
+  --pos-border: #e2e8f0;
+  --pos-text: #1e293b;
+  --pos-accent: #3b82f6;
+  --pos-success: #22c55e;
+  --pos-error: #ef4444;
+  --pos-warning: #f59e0b;
+
   /* Spacing */
+  --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 
   /* Border Radius */
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1a1a1a;
     --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
     --surface-color: #2d2d2d;
     --border-color: #404040;
+    
+    /* POS Dark Theme */
+    --pos-background: #0f172a;
+    --pos-surface: #1e293b;
+    --pos-border: #334155;
+    --pos-text: #f8fafc;
+    --pos-accent: #60a5fa;
+    --pos-success: #4ade80;
+    --pos-error: #f87171;
+    --pos-warning: #fbbf24;
   }
 }
