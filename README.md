@@ -2,6 +2,12 @@
 
 A modern React component library with a focus on simplicity and usability.
 
+## Installation
+
+```bash
+npm install @paysurity/ui@latest
+```
+
 ## Components
 
 - Button: Versatile button component with primary and secondary variants
@@ -10,7 +16,7 @@ A modern React component library with a focus on simplicity and usability.
 ## Usage
 
 ```tsx
-import { Button, Input } from 'paysurity-ui'
+import { Button, Input } from '@paysurity/ui'
 
 function App() {
   return (

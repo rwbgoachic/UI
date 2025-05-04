@@ -1,6 +1,6 @@
 {
   "name": "@paysurity/ui",
-  "private": false,
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.39.0"
+    "@supabase/supabase-js": "2.39.0",
+    "dotenv-encrypted": "^1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "11.1.0",
@@ -37,7 +38,7 @@
     "dist"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "keywords": [
     "react",

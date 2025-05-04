@@ -1,1 +1,153 @@
-404: Not Found
+/* POS Component Styles */
+
+/* Layout */
+.pos-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--spacing-md);
+  height: 100vh;
+  background-color: var(--pos-background);
+}
+
+.pos-sidebar {
+  padding: var(--spacing-md);
+  background-color: var(--pos-surface);
+  border-right: 1px solid var(--pos-border);
+}
+
+.pos-main {
+  padding: var(--spacing-md);
+  overflow-y: auto;
+}
+
+/* Product Grid */
+.pos-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+}
+
+.pos-product-card {
+  background-color: var(--pos-surface);
+  border: 1px solid var(--pos-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pos-product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Cart */
+.pos-cart {
+  background-color: var(--pos-surface);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.pos-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--pos-border);
+}
+
+.pos-cart-total {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  font-weight: bold;
+  border-top: 2px solid var(--pos-border);
+}
+
+/* Buttons */
+.pos-btn {
+  background-color: var(--pos-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pos-btn:hover {
+  background-color: color-mix(in srgb, var(--pos-accent) 85%, black);
+}
+
+.pos-btn-success {
+  background-color: var(--pos-success);
+}
+
+.pos-btn-danger {
+  background-color: var(--pos-error);
+}
+
+/* Forms */
+.pos-input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--pos-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--pos-surface);
+  color: var(--pos-text);
+}
+
+.pos-input:focus {
+  outline: none;
+  border-color: var(--pos-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pos-accent) 20%, transparent);
+}
+
+/* Status Indicators */
+.pos-status {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+}
+
+.pos-status-success {
+  background-color: color-mix(in srgb, var(--pos-success) 15%, transparent);
+  color: var(--pos-success);
+}
+
+.pos-status-error {
+  background-color: color-mix(in srgb, var(--pos-error) 15%, transparent);
+  color: var(--pos-error);
+}
+
+.pos-status-warning {
+  background-color: color-mix(in srgb, var(--pos-warning) 15%, transparent);
+  color: var(--pos-warning);
+}
+
+/* Animations */
+@keyframes pos-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pos-animate-fade-in {
+  animation: pos-fade-in 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pos-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .pos-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--pos-border);
+  }
+  
+  .pos-product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
