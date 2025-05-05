@@ -10,20 +10,64 @@ npm install @paysurity/ui@latest
 
 ## Components
 
-- Button: Versatile button component with primary and secondary variants
-- Input: Form input component with label and error state support
-
-## Usage
+### Button
+A versatile button component with primary and secondary variants.
 
 ```tsx
-import { Button, Input } from '@paysurity/ui'
+import { Button } from '@paysurity/ui'
 
-function App() {
+function Example() {
   return (
-    <div>
-      <Button variant="primary">Click me</Button>
-      <Input label="Username" error="This field is required" />
-    </div>
+    <Button variant="primary">
+      Click me
+    </Button>
   )
 }
 ```
+
+### Form Components
+Form components for building interactive user interfaces.
+
+```tsx
+import { Input } from '@paysurity/ui'
+
+function Example() {
+  return (
+    <Input 
+      label="Username"
+      placeholder="Enter username"
+      error="This field is required"
+    />
+  )
+}
+```
+
+### Icons
+Built-in icon components using Heroicons.
+
+```tsx
+import { Icon } from '@paysurity/ui'
+
+function Example() {
+  return (
+    <Icon name="HomeIcon" className="w-6 h-6" />
+  )
+}
+```
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build library
+npm run build:lib
+```
+
+## License
+
+MIT © PaySurity
