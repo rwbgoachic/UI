@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.39.0",
-    "dotenv-encrypted": "^1.0.0"
+    "dotenv-encrypted": "^1.0.0",
+    "@heroicons/react": "^2.0.18"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "11.1.0",
