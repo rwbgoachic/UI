@@ -104,6 +104,66 @@
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--pos-accent) 20%, transparent);
 }
 
+/* Number Pad */
+.pos-numpad {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--pos-surface);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+.pos-numpad-display {
+  margin-bottom: var(--spacing-md);
+}
+
+.pos-numpad-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: 1.5rem;
+  text-align: right;
+  border: 1px solid var(--pos-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--pos-surface);
+  color: var(--pos-text);
+}
+
+.pos-numpad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.pos-numpad-btn {
+  padding: var(--spacing-md);
+  font-size: 1.25rem;
+  border: 1px solid var(--pos-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--pos-surface);
+  color: var(--pos-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pos-numpad-btn:hover {
+  background-color: var(--pos-accent);
+  color: white;
+  border-color: var(--pos-accent);
+}
+
+.pos-numpad-clear {
+  background-color: var(--pos-error);
+  color: white;
+  border-color: var(--pos-error);
+}
+
+.pos-numpad-enter {
+  background-color: var(--pos-success);
+  color: white;
+  border-color: var(--pos-success);
+}
+
 /* Status Indicators */
 .pos-status {
   padding: var(--spacing-xs) var(--spacing-sm);
